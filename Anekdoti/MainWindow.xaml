@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Anekdoti"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="???" Height="333" Width="481" ResizeMode="NoResize">
     <Grid>
-        
+        <Button x:Name="bWorkers" Content="Сотрудники" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="bRoles" Content="Должности" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="75,0,0,0"/>
+        <Canvas x:Name="cWorkers" HorizontalAlignment="Left" Height="284" Margin="0,20,0,0" VerticalAlignment="Top" Width="475"/>
     </Grid>
 </Window>
