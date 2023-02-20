@@ -34,7 +34,16 @@
                     </Database:Person-->
                 </ListView>
             </Canvas>
-            <Canvas x:Name="cRoles" HorizontalAlignment="Center" Height="297" VerticalAlignment="Top" Width="481" Visibility="Hidden"/>
+            <Canvas x:Name="cRoles" HorizontalAlignment="Center" Height="297" VerticalAlignment="Top" Width="481" Visibility="Hidden">
+                <ListView x:Name="aChildPo" Height="297" Width="481" >
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Код" Width="25" DisplayMemberBinding="{Binding Id}"/>
+                            <GridViewColumn Header="Наименование должности" Width="200"  DisplayMemberBinding="{Binding Name}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Canvas>
         </Canvas>
     </Grid>
 </Window>

@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-C:\Users\Student-1\Desktop\Anekdoti\obj\Debug\
+C:\Users\Student-1\Desktop\Anekdoti2\obj\Debug\
 Anekdoti
 none
 false
 DEBUG;TRACE
-C:\Users\Student-1\Desktop\Anekdoti\App.xaml
-1219584333
+C:\Users\Student-1\Desktop\Anekdoti2\App.xaml
+2-1648790737
 
-8897694317
+91073190931
 13-1310406943
-MainWindow.xaml;
+Gui\Adding.xaml;MainWindow.xaml;
 
 False
 

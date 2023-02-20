@@ -10,30 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Anekdoti.ViewModel;
-using Database;
 
-namespace Anekdoti
+namespace Anekdoti.Gui
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Adding.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Adding : Window
     {
-        RoleViewModel vmRole;
-        PersonViewModel vmPerson;
         Canvas currWnd;
-        public MainWindow()
+
+        public Adding()
         {
             InitializeComponent();
-            vmRole = new RoleViewModel();
-            vmPerson = new PersonViewModel(vmRole);
-            // GAY SEX
-            aList.ItemsSource = vmPerson.ListPerson;  // PERSONALITY
-            // CHILD P0RN
-            aChildPo.ItemsSource = vmRole.ListRole;
         }
 
         private void OnSwitchWindow(object sender, RoutedEventArgs e)
