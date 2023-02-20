@@ -7,8 +7,13 @@
         mc:Ignorable="d"
         Title="???" Height="333" Width="481" ResizeMode="NoResize">
     <Grid>
-        <Button x:Name="bWorkers" Content="Сотрудники" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="bRoles" Content="Должности" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="75,0,0,0"/>
-        <Canvas x:Name="cWorkers" HorizontalAlignment="Left" Height="284" Margin="0,20,0,0" VerticalAlignment="Top" Width="475"/>
+        <Button x:Name="bWorkers" Content="Сотрудники" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Tag="cWorkers" Click="OnSwitchWindow"/>
+        <Button x:Name="bRoles" Content="Должности" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="75,0,0,0" Tag="cRoles" Click="OnSwitchWindow"/>
+        <Canvas x:Name="cMainWindow" HorizontalAlignment="Center" Height="297" Margin="0,20,0,0" VerticalAlignment="Top" Width="481" Visibility="Visible">
+            <Canvas x:Name="cWorkers" HorizontalAlignment="Center" Height="297" VerticalAlignment="Top" Width="481" Visibility="Hidden">
+                <Button Content="Button" HorizontalAlignment="Left" Margin="144,139,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+            </Canvas>
+            <Canvas x:Name="cRoles" HorizontalAlignment="Center" Height="297" VerticalAlignment="Top" Width="481" Visibility="Hidden"/>
+        </Canvas>
     </Grid>
 </Window>
