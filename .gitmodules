@@ -1,3 +1,3 @@
-[submodule "Praktika_theory/CSharpWinConsoleDrawing"]
-	path = Praktika_theory/CSharpWinConsoleDrawing
+[submodule "CSharpWinConsoleDrawing"]
+	path = CSharpWinConsoleDrawing
 	url = https://github.com/DocNITE/CSharpWinConsoleDrawing.git
