@@ -30,7 +30,7 @@ public partial class Controller {
         Console.WriteLine();
         Console.WriteLine(Journal.GetHumans<Teacher>()[0].Role);
         // mention if programm ended
-        Console.WriteLine("Work i sdon!");
+        Console.WriteLine("Work i sdon!  Rly");
         Console.ReadKey();
 
         //TODO: Сделать возможность копирования из Human для Studeable обьектов
