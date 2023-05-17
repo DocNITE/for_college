@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build_release",
-            "program": "${workspaceFolder}/bin/release/net7.0/CONSOLE_GAME.dll",
+            "program": "${workspaceFolder}/bin/release/net7.0/Praktika_theory.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "console": "externalTerminal",

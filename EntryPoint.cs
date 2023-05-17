@@ -2,17 +2,22 @@
 using Engine;
 using College.Persons;
 using College.Journals;
+using App.UI;
 
 namespace App;
 
+/// <summary>
+/// Application entry point
+/// </summary>
 public partial class Controller {
-    //public static Scene? Scene;
+    public static IScene? Scene;
         
     public new static void Initialize() {
+        Scene = new SceneExamine();
+        Scene.Initialize(); // Why not?
+
         // test
-        //Scene = new SceneRenderingTest();
-        //Scene.Initialize(); // Why not?
-        // make students
+        /*
         var hum1 = new Student(new DateTime(2000, 01, 01), "d", "a", ESex.Male);
         var hum2 = new Student(new DateTime(1999, 01, 01), "s", "g", ESex.Male);
         // make teacher
@@ -32,20 +37,21 @@ public partial class Controller {
         // mention if programm ended
         Console.WriteLine("Work i sdon!  Rly");
         Console.ReadKey();
+        */
 
         //TODO: Сделать возможность копирования из Human для Studeable обьектов
     }
      // Main game process - physics, movement and some.
     public new static void Update() {
-        //Scene?.Update();
+        Scene?.Update();
     }
      // Main renderer method for drawing screen buffer
     public new static void Render() {
-        //Scene?.Render();
+        Scene?.Render();
     }
      // Input listeneer
     public new static void KeyHandle(ConsoleKeyInfo input) {
-        //Scene?.KeyHandle(input);
+        Scene?.KeyHandle(input);
         
         if (input.Key == ConsoleKey.Escape) {
             LifeStage = LifeStage.Exit;
