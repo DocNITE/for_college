@@ -16,6 +16,7 @@ public class Human {
     public string SecondName {get; set;}
     public ESex Sex {get; set;}
     public DateTime Birthday {get; set;}
+    public int Health {get; set;}
 
     public Human(DateTime Birthday,
                 string FirstName = "Georgio", 
@@ -25,9 +26,10 @@ public class Human {
         this.SecondName = SecondName;
         this.Sex = Sex;
         this.Birthday = Birthday;
+        this.Health = 100;
     }
-
-    public bool IsCanWork() {
-        return true;
+    // Check, can work or not
+    public virtual bool IsCanWork() {
+        return (Health > 0);
     }
 }

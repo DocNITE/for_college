@@ -1,6 +1,7 @@
 using System.Runtime;
 using College.Journals;
 using College.Subjects;
+using College.Persons;
 
 namespace College.Persons;
 
@@ -15,5 +16,14 @@ public class Teacher : Studeble {
                 ESex Sex = ESex.Trans) : 
                 base(Birthday, FirstName, SecondName, Sex, ERoles.Teacher) {
         // TODO:
+    }
+    /// <summary>
+    /// Set scrote subject for student
+    /// </summary> 
+    public void SetSubjectScore(Student human, float score) {
+        foreach (var subject in human.Expiriences) {
+            if (subject.GetType() == LeadSubject.GetType())
+                subject.Score = score;
+        }
     }
 }
