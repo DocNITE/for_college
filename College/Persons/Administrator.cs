@@ -7,7 +7,7 @@ namespace College.Persons;
 /// Boss, or more important role
 /// </summary>
 public class Administrator: Studeble {
-    public float Expirience {get; set;}
+    public float? Expirience {get; set;}
 
     public Administrator(DateTime Birthday,
                 string FirstName = "Max", 
@@ -27,5 +27,10 @@ public class Administrator: Studeble {
     }
     public void RemoveWorker(string FirstName, string SecondName) {
         Journal.Remove(FirstName, SecondName);
+    }
+
+    public override bool IsCanWork()
+    {
+        return (base.IsCanWork() == (Expirience != null && Expirience > 0));
     }
 }

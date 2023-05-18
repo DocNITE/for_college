@@ -26,4 +26,9 @@ public class Teacher : Studeble {
                 subject.Score = score;
         }
     }
+
+    public override bool IsCanWork()
+    {
+        return (base.IsCanWork() == (LeadSubject != null));
+    }
 }
