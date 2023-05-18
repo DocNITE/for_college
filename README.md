@@ -7,7 +7,7 @@
 
 Безмозгло не надо срать в ветку.
 
-#Установка
+# Установка
 1. Установить [git bash](https://git-scm.com/downloads) и [dotnet sdk](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 2. Открыть Powershell или CMD и прописать следующие команды:
 ```
@@ -19,7 +19,7 @@ git checkout theory-works
 ```
 3. Писать код!
 
-#Сборка
+# Сборка
 1. Открыть Powershell или CMD и прописать следующее:
 ```
 dotnet build
