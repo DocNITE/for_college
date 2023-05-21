@@ -9,7 +9,7 @@ public class Teacher : Studeble {
     /// <summary> 
     /// Mark's, what is lesson subject lead our teacher.
     /// </summary>
-    public Subject LeadSubject {get; set;}
+    public Subject? LeadSubject {get; set;}
     public Teacher(DateTime Birthday,
                 string FirstName = "Oleg", 
                 string SecondName = "Kondratov", 
@@ -22,6 +22,9 @@ public class Teacher : Studeble {
     /// </summary> 
     public void SetSubjectScore(Student human, float score) {
         foreach (var subject in human.Expiriences) {
+            if (LeadSubject == null)
+                return;
+                
             if (subject.GetType() == LeadSubject.GetType())
                 subject.Score = score;
         }
