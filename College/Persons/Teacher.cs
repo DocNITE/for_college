@@ -24,7 +24,7 @@ public class Teacher : Studeble {
         foreach (var subject in human.Expiriences) {
             if (LeadSubject == null)
                 return;
-                
+                 
             if (subject.GetType() == LeadSubject.GetType())
                 subject.Score = score;
         }

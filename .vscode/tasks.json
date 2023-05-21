@@ -20,7 +20,7 @@
             "args": [
                 "build",
                 //"--configuration", "release", "--no-restore",
-                "${workspaceFolder}/CSharpWinConsoleDrawing/CONSOLE_GAME.csproj",
+                //"${workspaceFolder}/CSharpWinConsoleDrawing/CONSOLE_GAME.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

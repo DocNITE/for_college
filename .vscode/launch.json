@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build_release",
             "program": "${workspaceFolder}/bin/Debug/net7.0/Praktika_theory.dll",
-            "args": [],
+            "args": ["screen:70,40,12,12"],
             "cwd": "${workspaceFolder}",
             "console": "externalTerminal",
             "stopAtEntry": false

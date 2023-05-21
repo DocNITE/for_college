@@ -57,9 +57,9 @@ public class SceneExamine: IScene {
         Screen.SetText(35, 100, "Скролить - ^, v, >, <");
         Screen.SetText(36, 100, "Выбрать/Подтвердить - Enter");
     }   
-    public void KeyHandle(ConsoleKeyInfo input) {
-        ExList.KeyPressed(input.Key);
-    }
+    //public void KeyHandle(ConsoleKeyInfo input) {
+    //    ExList.KeyPressed(input.Key);
+    //}
     public void Dispose() {
 
     }
