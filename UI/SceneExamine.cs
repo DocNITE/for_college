@@ -126,6 +126,7 @@ public class SceneExamine: IScene {
 	    trianglesToRaster.Sort((t1, t2) => ((t2.p[0].z + t2.p[1].z + t2.p[2].z).CompareTo((t1.p[0].z + t1.p[1].z + t1.p[2].z))));
     }
     public void Render() {
+		Screen.SetText(0,0, "Hello man! How are you? + === ))() ;::", ConsoleColor.DarkMagenta);
         foreach(Triangle t in trianglesToRaster) {
 			Point a = new Point((int)t.p[0].x, (int)t.p[0].y);
 			Point b = new Point((int)t.p[1].x, (int)t.p[1].y);
